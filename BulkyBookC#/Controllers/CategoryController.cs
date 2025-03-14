@@ -90,7 +90,7 @@ namespace BulkyBookC_.Controllers
             }
             _db.Categories.Remove(obj);
             _db.SaveChangesAsync();
-            TempData["success"] = "Category deleted successfully!";
+            TempData["error"] = "Category deleted successfully!";
             return RedirectToAction("Index");
         }
     }
