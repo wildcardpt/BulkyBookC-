@@ -33,8 +33,8 @@ namespace BulkyBook_Razor.Pages.Categories
                 return NotFound();
             }
             _db.Categories.Remove(obj);
-           await _db.SaveChangesAsync();
-            //TempData["error"] = "Category deleted successfully!";
+            await _db.SaveChangesAsync();
+            TempData["success"] = "Category deleted successfully!";
             return RedirectToPage("Index");
         }
     }
