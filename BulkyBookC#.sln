@@ -5,6 +5,8 @@ VisualStudioVersion = 17.12.35209.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BulkyBookC#", "BulkyBookC#\BulkyBookC#.csproj", "{EA1A1750-1138-43BA-8D34-423E61A25633}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkyBook_Razor", "BulkyBook_Razor\BulkyBook_Razor.csproj", "{14156E2C-9EC6-4EBD-AEE9-D13F2DB47A50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EA1A1750-1138-43BA-8D34-423E61A25633}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA1A1750-1138-43BA-8D34-423E61A25633}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA1A1750-1138-43BA-8D34-423E61A25633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14156E2C-9EC6-4EBD-AEE9-D13F2DB47A50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14156E2C-9EC6-4EBD-AEE9-D13F2DB47A50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14156E2C-9EC6-4EBD-AEE9-D13F2DB47A50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14156E2C-9EC6-4EBD-AEE9-D13F2DB47A50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

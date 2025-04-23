@@ -1,0 +1,46 @@
+﻿@page
+@using BulkyBook_Razor.Models
+@model BulkyBook_Razor.Pages.Categories.IndexModel
+<partial name="_Notification" />
+<div class="container">
+    <div class="row pt-4 pb-3">
+        <div class="col-6">
+            <h2 class="text-primary"> Category List</h2>
+        </div>
+        <div class="col-6">
+            <div class="text-end">
+                <a asp-page="/Categories/Create" class="btn btn-primary">Create new Category <i class="bi bi-plus-circle-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                Category Name
+            </th>
+            <th>
+                Display Order
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Category cat in Model.CategoryList.OrderBy(l => l.DisplayOrder))
+        {
+            <tr>
+                <td>@cat.Name</td>
+                <td>@cat.DisplayOrder</td>
+                <td div class="w-75" role="group">
+                    <a asp-page="/Categories/Edit" asp-route-id="@cat.Id" class="btn btn-primary mx-2">
+                        <i class="bi bi-pencil-square">Edit</i>
+                    </a>
+                    <a asp-page="/Categories/Delete" asp-route-id="@cat.Id" class="btn btn-danger mx-2">
+                        <i class="bi bi-trash">Delete</i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
